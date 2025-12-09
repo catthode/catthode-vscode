@@ -1,0 +1,86 @@
+<svg width="360" height="360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter-wheat" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#fae2c8" result="flood"/> <feComposite in="flood" in2="blur" operator="in" result="bloom"/>
+      <feMerge>
+        <feMergeNode in="bloom"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+     <filter id="filter-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#ffb86c" result="flood"/> <feComposite in="flood" in2="blur" operator="in" result="bloom"/>
+      <feMerge>
+        <feMergeNode in="bloom"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="filter-amber" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#ff9e3b" result="flood"/> <feComposite in="flood" in2="blur" operator="in" result="bloom"/>
+      <feMerge>
+        <feMergeNode in="bloom"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="filter-clay" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#f08d49" result="flood"/> <feComposite in="flood" in2="blur" operator="in" result="bloom"/>
+      <feMerge>
+        <feMergeNode in="bloom"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="glass-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2d2d2d" stop-opacity="0.1"/>
+      <stop offset="20%" stop-color="#636363" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="80%" stop-color="#636363" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#2d2d2d" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="360" height="360" fill="#000000" />
+
+  <g transform="translate(30, 25)">
+    <path d="M 50 0 L 250 0 C 277 0 300 22 300 50 L 300 260 C 300 287 277 310 250 310 L 50 310 C 22 310 0 287 0 260 L 0 50 C 0 22 22 0 50 0 Z" 
+          fill="url(#glass-gradient)" 
+          stroke="#636363" 
+          stroke-width="2" />
+    
+    <path d="M 50 15 C 30 15 15 30 15 50" stroke="#aee6d6" stroke-width="2" fill="none" opacity="0.6" stroke-linecap="round"/>
+    <path d="M 285 50 C 285 30 270 15 250 15" stroke="#9cd9e6" stroke-width="2" fill="none" opacity="0.6" stroke-linecap="round"/>
+    <path d="M 285 260 C 285 280 270 295 250 295" stroke="#eba4be" stroke-width="2" fill="none" opacity="0.4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(60, 75)">
+    <g filter="url(#filter-clay)" opacity="0.6">
+        <path d="M 100 180 L 100 260" stroke="#f08d49" stroke-width="3" />
+        <path d="M 140 180 L 140 260" stroke="#f08d49" stroke-width="3" />
+    </g>
+      
+    <g filter="url(#filter-gold)">
+        <path d="M 40 80 L 20 20 L 80 40 L 160 40 L 220 20 L 200 80 L 220 140 L 180 180 L 60 180 L 20 140 L 40 80 Z" 
+              fill="none" stroke="#ffb86c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g filter="url(#filter-wheat)">
+        <path d="M 60 110 L 80 120 L 100 110" fill="none" stroke="#fae2c8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 140 110 L 160 120 L 180 110" fill="none" stroke="#fae2c8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <g filter="url(#filter-amber)">
+        <path d="M 110 145 L 130 145 L 120 160 Z" fill="none" stroke="#ff9e3b" stroke-width="4" stroke-linejoin="round" />
+        <line x1="10" y1="130" x2="40" y2="135" stroke="#ff9e3b" stroke-width="3" stroke-linecap="round"/>
+        <line x1="10" y1="150" x2="40" y2="150" stroke="#ff9e3b" stroke-width="3" stroke-linecap="round"/>
+        <line x1="230" y1="130" x2="200" y2="135" stroke="#ff9e3b" stroke-width="3" stroke-linecap="round"/>
+        <line x1="230" y1="150" x2="200" y2="150" stroke="#ff9e3b" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+</svg>
