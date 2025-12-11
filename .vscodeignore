@@ -1,0 +1,4 @@
+.git
+.gitignore
+**/*.svg
+.DS_Store

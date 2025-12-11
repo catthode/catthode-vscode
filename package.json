@@ -1,0 +1,43 @@
+{
+  "name": "catthode",
+  "displayName": "Catthode",
+  "description": "A warm OLED black VS Code Theme",
+  "version": "0.1.0",
+  "publisher": "Catthode",
+  "author": "jes-bz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/catthode/catthode-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/catthode/catthode-vscode/issues"
+  },
+  "homepage": "https://github.com/catthode/catthode-vscode#readme",
+  "icon": "assets/icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Catthode",
+        "uiTheme": "vs-dark",
+        "path": "./themes/catthode.json"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "workbench.action.terminal.sendSequence",
+        "key": "ctrl+f",
+        "when": "terminalFocus",
+        "args": {
+          "text": "\u0006"
+        }
+      }
+    ]
+  }
+}
