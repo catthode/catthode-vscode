@@ -4,7 +4,7 @@
   <img src="assets/icon.png" alt="Catthode Icon" width="128" />
 </p>
 
-> **From CRT to OLED.** Bringing warmth back to a world of cold themes.
+> **From CRT to OLED.** Bringing warmth back to a world of cold themes. [cattho.de](https://cattho.de/)
 
 Catthode is a high-contrast, retro-futuristic VS Code theme designed for prolonged coding sessions. It blends the crushed blacks of modern OLED displays with the comforting, warm glow of analog tungsten filaments.
 
